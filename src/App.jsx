@@ -1,9 +1,23 @@
+import About from "./components/sections/About";
+import Hero from "./components/sections/Hero";
+import Navbar from "./components/Navbar";
+import TechStack from "./components/sections/TechStack";
+import Projects from "./components/sections/Projects";
+import Contact from "./components/sections/Contact";
+import Footer from "./components/Footer";
 
-function App() {
-    return (
-        <h1>Hello Abdi</h1>
-    );
-}   
+const App = () => {
+  return (
+    <>
+      <Navbar></Navbar>
+      <Hero></Hero>
+      <About></About>
+      <TechStack></TechStack>
+      <Projects></Projects>
+      <Contact></Contact>
+      <Footer></Footer>
+    </>
+  );
+};
 
 export default App;
-  
