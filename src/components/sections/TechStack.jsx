@@ -137,11 +137,11 @@ const TechStack = () => {
   return (
     <section className="container-center-padding py-16">
       <h2 className="text-center text-4xl font-extrabold">Tech Stack</h2>
-      <div className="mt-8 grid grid-cols-3 gap-4">
+      <div className="mt-8 grid grid-cols-2 gap-4 md:grid-cols-3">
         {stacks.map((stack) => (
-          <div className="flex flex-col items-center justify-center gap-y-3 rounded-md border px-16 py-8">
+          <div key={stack.label} className="flex flex-col items-center justify-center gap-y-3 rounded-md border px-16 py-8">
             {stack.svg}
-            <h4 className="text-lg font-bold text-blax-800">{stack.label}</h4>
+            <h4 className="text-nowrap text-lg font-bold text-blax-800">{stack.label}</h4>
           </div>
         ))}
       </div>

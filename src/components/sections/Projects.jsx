@@ -54,11 +54,11 @@ const Projects = () => {
   return (
     <section className="container-center-padding py-16">
       <h2 className="text-center text-4xl font-extrabold">Projects</h2>
-      <div className="mt-8 grid grid-cols-3 gap-4">
+      <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3">
         {/* <div className="mt-8 flex flex-wrap justify-center"> */}
         {projects.map((project) => (
           // <div className="card mx-auto w-[calc((100%/3)-(16px*2))] overflow-hidden rounded-lg border">
-          <div className="card overflow-hidden rounded-lg border">
+          <div key={project.name} className="card overflow-hidden rounded-lg border">
             {/* // <div className="card w-[calc((100%/3))] overflow-hidden rounded-lg border"> */}
             <div className="image aspect-video">
               <img className="h-full w-full object-cover" src={project.image} alt="" />
@@ -66,11 +66,13 @@ const Projects = () => {
             <div className="p-4">
               <div className="body">
                 <h3 className="text-lg font-bold text-blax-950">{project.name}</h3>
-                <p className="h-[168px] text-blax-700">{project.description}</p>
+                <p className="text-blax-700 md:h-[168px]">{project.description}</p>
               </div>
-              <div className="stack mt-4 flex gap-x-2">
+              <div className="stack mt-4 flex flex-wrap gap-2">
                 {project.stacks.map((stack) => (
-                  <span className="rounded-md bg-blax-100 p-1 text-sm text-blax-950">{stack}</span>
+                  <span key={stack} className="rounded-md bg-blax-100 p-1 text-sm text-blax-950">
+                    {stack}
+                  </span>
                 ))}
               </div>
               <div className="action mt-4 flex items-center gap-x-3">
