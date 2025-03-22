@@ -4,11 +4,21 @@ const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
   const hamburgerRef = useRef(null);
   const navigationLinks = useRef(null);
-
-  console.log(navigationLinks);
+  const animatedLayer = useRef(null);
 
   const handleToggle = () => {
     setIsActive(!isActive);
+
+    setTimeout(() => {
+      if (navigationLinks.current.classList.contains("open")) {
+        navigationLinks.current.classList.add("close");
+        navigationLinks.current.classList.remove("open");
+      } else {
+        navigationLinks.current.classList.remove("close");
+        navigationLinks.current.classList.add("open");
+      }
+    }, 200);
+    animatedLayer.current.classList.toggle("active");
   };
 
   return (
@@ -17,19 +27,21 @@ const Navbar = () => {
         <a className="relative z-10 text-2xl font-bold" href="">
           abdi.dev
         </a>
-        <ul id="navigationLinks" ref={navigationLinks} className="xg absolute left-0 top-0 hidden h-screen w-full flex-col items-center justify-center gap-y-12 bg-white p-4 lg:gap-x-3">
+        <div className="" ref={animatedLayer} id="animatedLayer"></div>
+        <ul id="navigationLinks" ref={navigationLinks} className="absolute left-0 top-0 h-screen w-full flex-col items-center justify-center gap-y-12 p-4 lg:gap-x-3">
           <li>
-            <a className="text-2xl font-medium text-blax-900" href="">
+            <a className="link-item text-2xl font-medium text-blax-900" href="">
               about
             </a>
           </li>
+
           <li>
-            <a className="text-2xl font-medium text-blax-900" href="">
+            <a className="link-item text-2xl font-medium text-blax-900" href="">
               projects
             </a>
           </li>
           <li>
-            <a className="text-2xl font-medium text-blax-900" href="">
+            <a className="link-item text-2xl font-medium text-blax-900" href="">
               contact
             </a>
           </li>

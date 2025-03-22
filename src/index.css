@@ -23,6 +23,63 @@
   @apply -rotate-45 transition;
 }
 
-#navigationLinks.active {
+#navigationLinks {
+  opacity: 0;
   display: flex;
+  transition: opacity 600ms;
+  pointer-events: none;
+}
+
+#navigationLinks.open {
+  pointer-events: visible;
+  transition: opacity 500ms;
+  opacity: 1;
+}
+
+#animatedLayer {
+  background-color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  transform-origin: top right;
+  clip-path: circle(0px at 100% 0%);
+  transition: clip-path 800ms ease-in-out;
+}
+
+#animatedLayer.active {
+  backdrop-filter: blur(1000px);
+  clip-path: circle(141.4% at 100% 0);
+  transition: clip-path 500ms ease-in-out;
+}
+
+#navigationLinks.open li {
+  animation: fadeInUp 500ms forwards ease-in-out;
+}
+
+#navigationLinks.close li {
+  animation: fadeOutDown 200ms forwards ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOutDown {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(50px);
+  }
 }
