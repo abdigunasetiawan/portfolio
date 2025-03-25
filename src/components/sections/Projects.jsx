@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 const Projects = () => {
   const projects = [
     {
@@ -51,10 +53,31 @@ const Projects = () => {
     },
   ];
 
+  const handleCardDescriptionHeight = () => {
+    console.log("tes");
+
+    const cardDescriptions = [...document.querySelectorAll(".card-description")];
+    console.log(cardDescriptions);
+
+    const descriptionHeight = cardDescriptions.map((card) => card.clientHeight);
+    const highest = Math.max(...descriptionHeight);
+    cardDescriptions.forEach((card) => {
+      card.style.minHeight = `${highest}px`;
+    });
+    console.log(`descriptionHeight : ${descriptionHeight}`);
+    console.log(`highest : ${highest}`);
+  };
+
+  useEffect(() => {
+    handleCardDescriptionHeight();
+    // window.addEventListener("load", handleCardDescriptionHeight);
+    // window.addEventListener("resize", handleCardDescriptionHeight);
+  }, []);
+
   return (
     <section className="container-center-padding py-16">
       <h2 className="text-center text-4xl font-extrabold">Projects</h2>
-      <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3">
+      <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
         {/* <div className="mt-8 flex flex-wrap justify-center"> */}
         {projects.map((project) => (
           // <div className="card mx-auto w-[calc((100%/3)-(16px*2))] overflow-hidden rounded-lg border">
@@ -66,7 +89,8 @@ const Projects = () => {
             <div className="p-4">
               <div className="body">
                 <h3 className="text-lg font-bold text-blax-950">{project.name}</h3>
-                <p className="text-blax-700 md:h-[168px]">{project.description}</p>
+                {/* <p className="card-description text-blax-700 md:h-[168px]">{project.description}</p> */}
+                <p className="card-description text-blax-700">{project.description}</p>
               </div>
               <div className="stack mt-4 flex flex-wrap gap-2">
                 {project.stacks.map((stack) => (

@@ -28,26 +28,26 @@ const Navbar = () => {
           abdi.dev
         </a>
         <div className="" ref={animatedLayer} id="animatedLayer"></div>
-        <ul id="navigationLinks" ref={navigationLinks} className="absolute left-0 top-0 h-screen w-full flex-col items-center justify-center gap-y-12 p-4 lg:gap-x-3">
+        <ul id="navigationLinks" ref={navigationLinks} className="absolute left-0 top-0 h-screen w-full flex-col items-center justify-center gap-y-12 p-4 lg:gap-x-6">
           <li>
-            <a className="link-item text-2xl font-medium text-blax-900" href="">
+            <a className="link-item text-2xl font-medium text-blax-900 lg:text-base" href="">
               about
             </a>
           </li>
 
           <li>
-            <a className="link-item text-2xl font-medium text-blax-900" href="">
+            <a className="link-item text-2xl font-medium text-blax-900 lg:text-base" href="">
               projects
             </a>
           </li>
           <li>
-            <a className="link-item text-2xl font-medium text-blax-900" href="">
+            <a className="link-item text-2xl font-medium text-blax-900 lg:text-base" href="">
               contact
             </a>
           </li>
         </ul>
 
-        <div ref={hamburgerRef} onClick={handleToggle}>
+        <div className="lg:hidden" ref={hamburgerRef} onClick={handleToggle}>
           <button className="relative z-10 rounded-md border-2 border-blax-800 p-1">
             {!isActive && (
               <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-menu-4">

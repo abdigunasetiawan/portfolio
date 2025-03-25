@@ -5,6 +5,7 @@ import TechStack from "./components/sections/TechStack";
 import Projects from "./components/sections/Projects";
 import Contact from "./components/sections/Contact";
 import Footer from "./components/Footer";
+import Cursor from "./components/Cursor";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Projects></Projects>
       <Contact></Contact>
       <Footer></Footer>
+      <Cursor></Cursor>
     </>
   );
 };

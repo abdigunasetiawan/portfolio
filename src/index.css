@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  cursor: none;
+}
+
 .container-center-padding {
   @apply container mx-auto px-4 md:px-8 lg:px-12 xl:px-16;
   /* @apply container mx-auto px-4 2xl:max-w-6xl; */
@@ -81,5 +85,16 @@
   to {
     opacity: 0;
     transform: translateY(50px);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #navigationLinks {
+    opacity: 1;
+    position: relative;
+    height: auto;
+    width: max-content;
+    flex-direction: row;
+    pointer-events: visible;
   }
 }

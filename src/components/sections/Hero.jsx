@@ -5,7 +5,7 @@ const Hero = () => {
         <h1 className="text-5xl font-extrabold md:text-6xl">
           Hello 👋 <span className="block text-6xl md:text-7xl">I'm Abdi</span>
         </h1>
-        <p className="mt-2 text-blax-900">A Front-End Developer who loves crafting stunning, user-friendly websites that bring ideas to life.</p>
+        <p className="mt-2 text-blax-900 md:max-w-sm">A Front-End Developer who loves crafting stunning, user-friendly websites that bring ideas to life.</p>
         <div className="mt-4 flex gap-x-3">
           <button className="flex shrink-0 items-center gap-x-3 rounded-lg bg-blax-950 px-6 py-4 font-medium text-blax-100">
             <span className="">Contact Me</span>
@@ -26,7 +26,7 @@ const Hero = () => {
           </button>
         </div>
       </div>
-      <div className="hidden w-80 md:block">
+      <div className="hidden w-56 md:block lg:w-80">
         <img className="h-full w-full" src="images/hero.png" alt="" />
       </div>
     </section>
