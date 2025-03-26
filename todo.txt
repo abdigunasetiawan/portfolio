@@ -1,0 +1,5 @@
+✅ : 26-03-2025 | 23-28 : tambahkan fitur navigasi link navbar 
+✅ : 26-03-2025 | 23-45 : perbaiki social media link
+perbaiki deskripsi card project
+tambahkan fitur contact me
+

@@ -6,6 +6,25 @@ const Navbar = () => {
   const navigationLinks = useRef(null);
   const animatedLayer = useRef(null);
 
+  const links = [
+    {
+      label: "about",
+      href: "#about",
+    },
+    {
+      label: "skills",
+      href: "#skills",
+    },
+    {
+      label: "projects",
+      href: "#projects",
+    },
+    {
+      label: "contact",
+      href: "#contact ",
+    },
+  ];
+
   const handleToggle = () => {
     setIsActive(!isActive);
 
@@ -29,7 +48,15 @@ const Navbar = () => {
         </a>
         <div className="" ref={animatedLayer} id="animatedLayer"></div>
         <ul id="navigationLinks" ref={navigationLinks} className="absolute left-0 top-0 h-screen w-full flex-col items-center justify-center gap-y-12 p-4 lg:gap-x-6">
-          <li>
+          {links.map((link) => (
+            <li>
+              <a className="link-item text-2xl font-medium text-blax-900 lg:text-base" href={link.href}>
+                {link.label}
+              </a>
+            </li>
+          ))}
+
+          {/* <li>
             <a className="link-item text-2xl font-medium text-blax-900 lg:text-base" href="">
               about
             </a>
@@ -44,7 +71,7 @@ const Navbar = () => {
             <a className="link-item text-2xl font-medium text-blax-900 lg:text-base" href="">
               contact
             </a>
-          </li>
+          </li> */}
         </ul>
 
         <div className="lg:hidden" ref={hamburgerRef} onClick={handleToggle}>

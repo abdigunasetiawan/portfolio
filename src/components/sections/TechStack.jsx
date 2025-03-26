@@ -135,7 +135,7 @@ const TechStack = () => {
   ];
 
   return (
-    <section className="container-center-padding py-16">
+    <section id="skills" className="container-center-padding py-16">
       <h2 className="text-center text-4xl font-extrabold">Tech Stack</h2>
       <div className="mt-8 grid grid-cols-2 gap-2 md:grid-cols-3 lg:gap-4">
         {stacks.map((stack) => (
