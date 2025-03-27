@@ -25,6 +25,12 @@ const Navbar = () => {
     },
   ];
 
+  const handleCloseDrawer = () => {
+    navigationLinks.current.classList.add("close");
+    navigationLinks.current.classList.remove("open");
+    animatedLayer.current.classList.toggle("active");
+  };
+
   const handleToggle = () => {
     setIsActive(!isActive);
 
@@ -49,8 +55,8 @@ const Navbar = () => {
         <div className="" ref={animatedLayer} id="animatedLayer"></div>
         <ul id="navigationLinks" ref={navigationLinks} className="absolute left-0 top-0 h-screen w-full flex-col items-center justify-center gap-y-12 p-4 lg:gap-x-6">
           {links.map((link) => (
-            <li>
-              <a className="link-item text-2xl font-medium text-blax-900 lg:text-base" href={link.href}>
+            <li key={link.label}>
+              <a className="link-item text-2xl font-medium text-blax-900 lg:text-base" href={link.href} onClick={handleCloseDrawer}>
                 {link.label}
               </a>
             </li>

@@ -7,49 +7,71 @@ const Projects = () => {
       description: "Forum Programmer Kaputama is a landing page created for a campus organization, designed to showcase its vision, activities, and community initiatives. This project enhances front-end development skills by transforming complex UI/UX designs into a fully functional website using Tailwind CSS.",
       stacks: ["HTML", "CSS", "Javascript", "Tailwind CSS"],
       image: "../images/projects/forum-programmer-kaputama.png",
-      link: "https://forumprogrammerkaputama.vercel.app/",
+      link: {
+        github: "https://github.com/abdigunasetiawan/fpk",
+        demo: "https://forumprogrammerkaputama.vercel.app/",
+      },
     },
     {
       name: "Dressly",
-      description: "Dressly is a web project designed to sharpen front-end development skills, particularly in transforming UI/UX designs into fully functional websites. This project focuses on mastering Tailwind CSS for efficient styling and handling complex layouts to create a seamless user experience.",
+      // description: "Dressly is a web project designed to sharpen front-end development skills, particularly in transforming UI/UX designs into fully functional websites. This project focuses on mastering Tailwind CSS for efficient styling and handling complex layouts to create a seamless user experience.",
+      description: "Dressly is a web project designed to enhance front-end development skills by transforming UI/UX designs into fully functional and interactive websites. This project focuses on mastering Tailwind CSS for efficient styling and responsive layouts while integrating smooth animations to create a dynamic and engaging user experience.",
       stacks: ["HTML", "CSS", "Javascript", "Tailwind CSS"],
       image: "../images/projects/dressly.png",
-      link: "https://dressly.vercel.app/",
+      link: {
+        github: "https://github.com/abdigunasetiawan/dressly",
+        demo: "https://abdigunasetiawan.github.io/dressly/",
+      },
     },
     {
       name: "Storx",
       description: "Storx is a web application created to improve my JavaScript skills, specifically in fetching data and implementing Single Page Applications (SPAs) using standard JavaScript. The project implements a modular approach, which makes the code more structured and easy to maintain.",
       stacks: ["HTML", "CSS", "Javascript", "Tailwind CSS"],
       image: "../images/projects/storx.png",
-      link: "https://dressly.vercel.app/",
+      link: {
+        github: "https://github.com/abdigunasetiawan/storx",
+        demo: "https://storx-abdi.vercel.app/",
+      },
     },
     {
       name: "Storx React",
       description: "Storx React is an enhanced version of Storx, built using React.js to deliver a more dynamic and efficient user experience. This project implements proper SPA (Single Page Application) architecture with React Router, ensuring seamless navigation between pages without reloading.",
       stacks: ["HTML", "CSS", "Javascript", "Tailwind CSS", "React"],
       image: "../images/projects/storx-react.png",
-      link: "https://dressly.vercel.app/",
+      link: {
+        github: "https://github.com/abdigunasetiawan/storx-react",
+        // demo: "https://dressly.vercel.app/",
+      },
     },
     {
       name: "Skilline",
       description: "Skilline is a practice project focused on converting a design into a fully functional webpage using Tailwind CSS. This project enhances skills in UI development, responsive design, and layout structuring. By leveraging Tailwind CSS, it ensures clean, maintainable, and efficient styling while achieving pixel-perfect design accuracy.",
       stacks: ["HTML", "CSS", "Javascript", "Tailwind CSS"],
       image: "../images/projects/skilline.png",
-      link: "https://dressly.vercel.app/",
+      link: {
+        github: "https://github.com/abdigunasetiawan/online-learning-landing-page",
+        demo: "https://online-learning-landing-page-abdi.vercel.app/",
+      },
     },
     {
       name: "Design Agency",
       description: "Design Agency is a practice project focused on converting a design into a sleek and professional landing page using pure CSS. This project enhances skills in UI structuring, layout techniques, and responsive design, ensuring a smooth and visually appealing user experience.",
       stacks: ["HTML", "CSS", "Javascript", "Tailwind CSS"],
       image: "../images/projects/design-agency.png",
-      link: "https://dressly.vercel.app/",
+      link: {
+        github: "https://github.com/abdigunasetiawan/design-agency-landing-page",
+        demo: "https://design-agency-landing-page.vercel.app/",
+      },
     },
     {
       name: "Jadoo",
       description: "Jadoo is a practice project focused on transforming a design into a fully responsive landing page using pure CSS. This project improves skills in layout structuring, typography, and responsive design, ensuring a seamless and visually engaging user experience.",
       stacks: ["HTML", "CSS", "Javascript", "Tailwind CSS"],
       image: "../images/projects/jadoo.png",
-      link: "https://dressly.vercel.app/",
+      link: {
+        github: "https://github.com/abdigunasetiawan/jadoo-travel-agency",
+        demo: "https://jadoo-travel-agency-abdi.vercel.app/",
+      },
     },
   ];
 
@@ -83,9 +105,9 @@ const Projects = () => {
           // <div className="card mx-auto w-[calc((100%/3)-(16px*2))] overflow-hidden rounded-lg border">
           <div key={project.name} className="card overflow-hidden rounded-lg border">
             {/* // <div className="card w-[calc((100%/3))] overflow-hidden rounded-lg border"> */}
-            <div className="image aspect-video">
+            <a href={project.link.demo || "#"} target="_blank" className="image block aspect-video">
               <img className="h-full w-full object-cover" src={project.image} alt="" />
-            </div>
+            </a>
             <div className="p-4">
               <div className="body">
                 <h3 className="text-lg font-bold text-blax-950">{project.name}</h3>
@@ -100,7 +122,7 @@ const Projects = () => {
                 ))}
               </div>
               <div className="action mt-4 flex items-center gap-x-3">
-                <a className="flex items-center gap-x-1" href="">
+                <a className="flex items-center gap-x-1" href={project.link.github || "https://github.com/abdigunasetiawan"} target="_blank">
                   <svg width="24" height="24" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="github">
                       <g id="github_2">
@@ -112,7 +134,7 @@ const Projects = () => {
 
                   <span className="text-sm">View On Github</span>
                 </a>
-                <a className="flex items-center gap-x-1" href="">
+                <a className="flex items-center gap-x-1" href={project.link.demo || "#"} target="_blank">
                   <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-external-link">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                     <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />

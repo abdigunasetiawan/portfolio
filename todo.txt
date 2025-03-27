@@ -1,5 +1,8 @@
 ✅ : 26-03-2025 | 23-28 : tambahkan fitur navigasi link navbar 
 ✅ : 26-03-2025 | 23-45 : perbaiki social media link
-perbaiki deskripsi card project
+✅ : 27-03-2025 | 15.30 perbaiki card project
 tambahkan fitur contact me
-
+perbaiki lebar container
+tambahkan smooth scroll
+tambahkan fungsi untuk menutup drawer navbar ketika link navbar diklik (mobile)
+tambahkan favicon

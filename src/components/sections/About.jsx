@@ -75,7 +75,7 @@ const About = () => {
             <h3 className="text-center text-lg font-bold md:text-left">My Social Links</h3>
             <div className="mt-1 flex justify-center gap-x-3 md:justify-start">
               {socialLinks.map((link) => (
-                <a href={link.href} target="_blank" label={link.label}>
+                <a key={link.label} href={link.href} target="_blank" label={link.label}>
                   {link.icon}
                 </a>
               ))}
