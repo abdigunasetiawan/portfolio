@@ -1,8 +1,9 @@
 ✅ : 26-03-2025 | 23-28 : tambahkan fitur navigasi link navbar 
 ✅ : 26-03-2025 | 23-45 : perbaiki social media link
 ✅ : 27-03-2025 | 15.30 perbaiki card project
+✅ : 28-03-2025 | 00.25 perbaiki ikon toggle navbar
+✅ : 28-03-2025 | 00.25 tambahkan fungsi untuk menutup drawer navbar ketika link navbar diklik (mobile)
 tambahkan fitur contact me
 perbaiki lebar container
-tambahkan smooth scroll
-tambahkan fungsi untuk menutup drawer navbar ketika link navbar diklik (mobile)
+tambahkan locomotive scroll
 tambahkan favicon

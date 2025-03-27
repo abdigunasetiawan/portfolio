@@ -4,7 +4,6 @@
 
 html {
   scroll-padding: 32px;
-  scroll-behavior: smooth;
 }
 
 .container-center-padding {
@@ -89,13 +88,17 @@ html {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
   body {
     cursor: none;
   }
 }
 
 @media screen and (min-width: 1024px) {
+  html {
+    scroll-behavior: smooth;
+  }
+
   #navigationLinks {
     opacity: 1;
     position: relative;

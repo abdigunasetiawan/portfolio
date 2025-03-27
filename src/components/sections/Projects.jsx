@@ -76,18 +76,14 @@ const Projects = () => {
   ];
 
   const handleCardDescriptionHeight = () => {
-    console.log("tes");
-
     const cardDescriptions = [...document.querySelectorAll(".card-description")];
-    console.log(cardDescriptions);
+    // console.log(cardDescriptions);
 
     const descriptionHeight = cardDescriptions.map((card) => card.clientHeight);
     const highest = Math.max(...descriptionHeight);
     cardDescriptions.forEach((card) => {
       card.style.minHeight = `${highest}px`;
     });
-    console.log(`descriptionHeight : ${descriptionHeight}`);
-    console.log(`highest : ${highest}`);
   };
 
   useEffect(() => {

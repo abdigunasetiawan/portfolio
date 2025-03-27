@@ -3,7 +3,6 @@ import { useEffect, useRef, useState } from "react";
 const Navbar = () => {
   const [isToggleActive, setIsToggleActive] = useState(false);
   const [isAnimatedLayerActive, setIsAnimatedLayerActive] = useState(false);
-  const [isNavigationLinksOpen, setIsNavigationLinksOpen] = useState(false);
   const hamburgerRef = useRef(null);
   const navigationLinks = useRef(null);
   const animatedLayer = useRef(null);
@@ -29,29 +28,24 @@ const Navbar = () => {
 
   const handleCloseDrawer = () => {
     setIsToggleActive(!isToggleActive);
-    setIsAnimatedLayerActive(!isAnimatedLayerActive);
-    setIsNavigationLinksOpen(!isNavigationLinksOpen);
-    // navigationLinks.current.classList.add("close");
-    // navigationLinks.current.classList.remove("open");
-    // animatedLayer.current.classList.toggle("active");
+    navigationLinks.current.classList.add("close");
+    navigationLinks.current.classList.remove("open");
+    animatedLayer.current.classList.toggle("active");
   };
 
   const handleToggle = () => {
     setIsToggleActive(!isToggleActive);
 
     setTimeout(() => {
-      if (isNavigationLinksOpen) {
-        setIsNavigationLinksOpen(false);
-        // navigationLinks.current.classList.add("close");
-        // navigationLinks.current.classList.remove("open");
+      if (navigationLinks.current.classList.contains("open")) {
+        navigationLinks.current.classList.add("close");
+        navigationLinks.current.classList.remove("open");
       } else {
-        setIsNavigationLinksOpen(true);
-        // navigationLinks.current.classList.remove("close");
-        // navigationLinks.current.classList.add("open");
+        navigationLinks.current.classList.remove("close");
+        navigationLinks.current.classList.add("open");
       }
     }, 200);
-    setIsAnimatedLayerActive(!isAnimatedLayerActive);
-    // animatedLayer.current.classList.toggle("active");
+    animatedLayer.current.classList.toggle("active");
   };
 
   return (
@@ -60,8 +54,8 @@ const Navbar = () => {
         <a className="relative z-10 text-2xl font-bold" href="">
           abdi.dev
         </a>
-        <div className={`${isAnimatedLayerActive ? "active" : ""}`} ref={animatedLayer} id="animatedLayer"></div>
-        <ul id="navigationLinks" ref={navigationLinks} className={`${isNavigationLinksOpen ? "open" : "close"} absolute left-0 top-0 h-screen w-full flex-col items-center justify-center gap-y-12 p-4 lg:gap-x-6`}>
+        <div className="" ref={animatedLayer} id="animatedLayer"></div>
+        <ul id="navigationLinks" ref={navigationLinks} className="absolute left-0 top-0 h-screen w-full flex-col items-center justify-center gap-y-12 p-4 lg:gap-x-6">
           {links.map((link) => (
             <li key={link.label}>
               <a className="link-item text-2xl font-medium text-blax-900 lg:text-base" href={link.href} onClick={handleCloseDrawer}>
