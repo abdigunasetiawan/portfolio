@@ -3,7 +3,6 @@ import { useEffect, useRef, useState } from "react";
 const Navbar = () => {
   const [isToggleActive, setIsToggleActive] = useState(false);
   const [isAnimatedLayerActive, setIsAnimatedLayerActive] = useState(false);
-  const [isNavigationLinksOpen, setIsNavigationLinksOpen] = useState(false);
   const hamburgerRef = useRef(null);
   const navigationLinks = useRef(null);
   const animatedLayer = useRef(null);
@@ -28,31 +27,52 @@ const Navbar = () => {
   ];
 
   const handleCloseDrawer = () => {
-    setIsToggleActive(!isToggleActive);
-    setIsAnimatedLayerActive(!isAnimatedLayerActive);
-    setIsNavigationLinksOpen(!isNavigationLinksOpen);
-    // navigationLinks.current.classList.add("close");
-    // navigationLinks.current.classList.remove("open");
-    // animatedLayer.current.classList.toggle("active");
+    if (window.innerWidth > 1024) {
+      return;
+    }
+    setIsToggleActive(false);
+    setIsAnimatedLayerActive(false);
+    navigationLinks.current.classList.add("close");
+    navigationLinks.current.classList.remove("open");
   };
 
+  // saat hamburger toggle diklik
   const handleToggle = () => {
     setIsToggleActive(!isToggleActive);
 
     setTimeout(() => {
-      if (isNavigationLinksOpen) {
-        setIsNavigationLinksOpen(false);
-        // navigationLinks.current.classList.add("close");
-        // navigationLinks.current.classList.remove("open");
+      if (navigationLinks.current.classList.contains("open")) {
+        navigationLinks.current.classList.add("close");
+        navigationLinks.current.classList.remove("open");
       } else {
-        setIsNavigationLinksOpen(true);
-        // navigationLinks.current.classList.remove("close");
-        // navigationLinks.current.classList.add("open");
+        navigationLinks.current.classList.remove("close");
+        navigationLinks.current.classList.add("open");
       }
     }, 200);
     setIsAnimatedLayerActive(!isAnimatedLayerActive);
-    // animatedLayer.current.classList.toggle("active");
   };
+
+  // saat komponen dimount
+  useEffect(() => {
+    const handleResize = () => {
+      // cek lebar, apakah lebih besar dari 1024 (dekstop mode)
+      if (window.innerWidth > 1024) {
+        // reset state dan class
+        setIsAnimatedLayerActive(false);
+        setIsToggleActive(false);
+        navigationLinks.current.classList.remove("open");
+        navigationLinks.current.classList.remove("close");
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  // saat layar berubah
 
   return (
     <header className="fixed left-0 top-0 w-full border bg-white/50 backdrop-blur-md">
@@ -61,7 +81,7 @@ const Navbar = () => {
           abdi.dev
         </a>
         <div className={`${isAnimatedLayerActive ? "active" : ""}`} ref={animatedLayer} id="animatedLayer"></div>
-        <ul id="navigationLinks" ref={navigationLinks} className={`${isNavigationLinksOpen ? "open" : "close"} absolute left-0 top-0 h-screen w-full flex-col items-center justify-center gap-y-12 p-4 lg:gap-x-6`}>
+        <ul id="navigationLinks" ref={navigationLinks} className="absolute left-0 top-0 h-screen w-full flex-col items-center justify-center gap-y-12 p-4 lg:gap-x-6">
           {links.map((link) => (
             <li key={link.label}>
               <a className="link-item text-2xl font-medium text-blax-900 lg:text-base" href={link.href} onClick={handleCloseDrawer}>
