@@ -66,6 +66,10 @@ html {
   animation: fadeOutDown 200ms forwards ease-in-out;
 }
 
+section#contact .form-input:user-invalid {
+  /* @apply border-red-400 outline-red-400; */
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
