@@ -4,7 +4,7 @@
 ✅ : 28-03-2025 | 00.25 perbaiki ikon toggle navbar
 ✅ : 28-03-2025 | 00.25 tambahkan fungsi untuk menutup drawer navbar ketika link navbar diklik (mobile)
 ✅ : 29-03-2025 | 16.36  tambahkan fitur contact me
-perbaiki card project
+✅ : 30-03-2025 | 11.23 perbaiki card project
 perbaiki lebar container
 tambahkan locomotive scroll
 tambahkan favicon

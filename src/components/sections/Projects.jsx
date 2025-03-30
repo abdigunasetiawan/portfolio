@@ -76,6 +76,10 @@ const Projects = () => {
   ];
 
   const handleCardDescriptionHeight = () => {
+    if (window.innerWidth < 768) {
+      return;
+    }
+
     const cardDescriptions = [...document.querySelectorAll(".card-description")];
     const cardStacks = [...document.querySelectorAll(".card-stacks")];
 
