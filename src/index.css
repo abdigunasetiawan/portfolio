@@ -50,9 +50,11 @@ html {
   transform-origin: top right;
   clip-path: circle(0px at 100% 0%);
   transition: clip-path 800ms ease-in-out;
+  visibility: none;
 }
 
 #animatedLayer.active {
+  visibility: visible;
   backdrop-filter: blur(1000px);
   clip-path: circle(141.4% at 100% 0);
   transition: clip-path 500ms ease-in-out;

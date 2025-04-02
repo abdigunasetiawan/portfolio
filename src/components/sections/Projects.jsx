@@ -76,12 +76,16 @@ const Projects = () => {
   ];
 
   const handleCardDescriptionHeight = () => {
-    if (window.innerWidth < 768) {
-      return;
-    }
-
     const cardDescriptions = [...document.querySelectorAll(".card-description")];
     const cardStacks = [...document.querySelectorAll(".card-stacks")];
+
+    // reset description height on resized window
+    if (window.innerWidth < 768) {
+      cardDescriptions.forEach((card) => {
+        card.style.height = `auto`;
+      });
+      return;
+    }
 
     // reset description height
     cardDescriptions.forEach((card) => {
