@@ -64,7 +64,7 @@ const Contact = () => {
             Name
           </label>
           <input
-            className="form-input rounded-md border px-4 py-2.5"
+            className="form-input rounded-md border bg-transparent px-4 py-2.5 dark:border-slate-100/10"
             name="name"
             type="text"
             placeholder="Your username"
@@ -81,7 +81,7 @@ const Contact = () => {
             Email
           </label>
           <input
-            className="form-input rounded-md border px-4 py-2.5"
+            className="form-input rounded-md border bg-transparent px-4 py-2.5 dark:border-slate-100/10"
             name="email"
             type="email"
             placeholder="Your email"
@@ -93,7 +93,7 @@ const Contact = () => {
         <div className="flex flex-col gap-y-2">
           <label htmlFor="message">Message</label>
           <textarea
-            className="form-input h-20 rounded-md border px-4 py-2.5"
+            className="form-input h-20 rounded-md border bg-transparent px-4 py-2.5 dark:border-slate-100/10"
             name="message"
             id=""
             placeholder="Your message"
@@ -103,7 +103,7 @@ const Contact = () => {
           ></textarea>
         </div>
         <button
-          className="mt-2 flex items-center justify-center gap-x-3 rounded-lg bg-blax-950 px-4 py-4 text-blax-50"
+          className="mt-2 flex items-center justify-center gap-x-3 rounded-lg bg-blax-950 px-4 py-4 text-blax-50 dark:text-blax-100"
           type="submit"
           disabled={isSending}
         >

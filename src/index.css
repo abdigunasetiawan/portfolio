@@ -41,7 +41,6 @@ html {
 }
 
 #animatedLayer {
-  background-color: white;
   position: absolute;
   top: 0;
   right: 0;
@@ -66,6 +65,11 @@ html {
 
 #navigationLinks.close li {
   animation: fadeOutDown 200ms forwards ease-in-out;
+}
+
+body.dark #navigationLinks.open {
+  /* dark:bg-blax-950 */
+  @apply bg-blax-950;
 }
 
 section#contact .form-input:user-invalid {

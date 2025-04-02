@@ -110,14 +110,14 @@ const Navbar = () => {
       <div className="container-center-padding relative flex h-16 items-center justify-between">
         {/* 1 Child */}
         <a
-          className="relative z-10 text-2xl font-bold"
+          className="relative z-10 text-2xl font-bold dark:text-blax-200"
           href=""
         >
           abdi.dev
         </a>
         {/* Child dissapear */}
         <div
-          className={`${isAnimatedLayerActive ? "active" : ""}`}
+          className={`${isAnimatedLayerActive ? "active" : ""} bg-white dark:bg-blax-950`}
           ref={animatedLayer}
           id="animatedLayer"
         ></div>
@@ -130,7 +130,7 @@ const Navbar = () => {
             {links.map((link) => (
               <li key={link.label}>
                 <a
-                  className="link-item text-2xl font-medium text-blax-900 lg:text-base"
+                  className="link-item text-2xl font-medium text-blax-900 lg:text-base dark:text-blax-200"
                   href={link.href}
                   onClick={handleCloseDrawer}
                 >
