@@ -4,6 +4,7 @@
 
 html {
   scroll-padding: 32px;
+  scroll-behavior: smooth;
 }
 
 .container-center-padding {

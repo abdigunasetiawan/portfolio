@@ -107,7 +107,7 @@ const Navbar = () => {
 
   return (
     <header className="fixed left-0 top-0 w-full border-b bg-white/50 backdrop-blur-md dark:border-b-slate-100/10 dark:bg-[#0C0C0C]/50">
-      <div className="container-center-padding relative flex h-16 items-center justify-between">
+      <div className="container-center-padding flex h-16 items-center justify-between">
         {/* 1 Child */}
         <a
           className="relative z-10 text-2xl font-bold dark:text-blax-200"

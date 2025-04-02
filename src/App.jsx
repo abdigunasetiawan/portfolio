@@ -6,6 +6,7 @@ import Projects from "./components/sections/Projects";
 import Contact from "./components/sections/Contact";
 import Footer from "./components/Footer";
 import Cursor from "./components/Cursor";
+import { useEffect } from "react";
 
 const App = () => {
   return (
