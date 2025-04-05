@@ -1,3 +1,5 @@
+import { ReactLenis, useLenis } from "lenis/react";
+
 import About from "./components/sections/About";
 import Hero from "./components/sections/Hero";
 import Navbar from "./components/Navbar";
@@ -9,8 +11,10 @@ import Cursor from "./components/Cursor";
 import { useEffect } from "react";
 
 const App = () => {
+  const lenis = useLenis();
+
   return (
-    <>
+    <ReactLenis root>
       <Navbar></Navbar>
       <Hero></Hero>
       <About></About>
@@ -19,7 +23,7 @@ const App = () => {
       <Contact></Contact>
       <Footer></Footer>
       <Cursor></Cursor>
-    </>
+    </ReactLenis>
   );
 };
 

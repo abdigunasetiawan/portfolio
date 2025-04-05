@@ -10,6 +10,7 @@
 ✅ : 02-04-2025 | 23.46 tambahkan favicon
 ✅ : 05-04-2025 | 11.47 perbaiki animasi smooth scroll pada mobile
 ✅ : 05-04-2025 | 12.32 perbaiki cta
-perbaiki lebar container
-tambahkan locomotive scroll
+✅ : 05-04-2025 | 13.10 perbaiki lebar container
+✅ : 05-04-2025 | 13.22 tambahkan lenis scroll
 tambahkan design gradient modern
+tambahkan loading layer
