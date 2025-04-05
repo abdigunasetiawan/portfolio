@@ -1,6 +1,9 @@
 const Hero = () => {
   return (
-    <section className="container-center-padding mt-16 flex items-center justify-between py-16">
+    <section
+      id="hero"
+      className="container-center-padding mt-16 flex items-center justify-between py-16"
+    >
       <div className="">
         <h1 className="text-5xl font-extrabold md:text-6xl">
           Hello 👋 <span className="block text-6xl md:text-7xl">I'm Abdi</span>
@@ -8,7 +11,7 @@ const Hero = () => {
         <p className="mt-2 text-blax-900 md:max-w-sm lg:max-w-lg lg:text-balance dark:text-blax-200">A Front-End Developer who loves crafting stunning, user-friendly websites that bring ideas to life.</p>
         <div className="mt-4 flex gap-x-3">
           <button
-            className="flex shrink-0 items-center gap-x-3 rounded-lg bg-blax-950 px-6 py-4 font-medium text-blax-200"
+            className="flex shrink-0 items-center gap-x-3 rounded-lg bg-blax-950 px-6 py-4 font-medium text-blax-200 transition-transform duration-100 active:scale-95 active:transition-transform active:duration-100"
             onClick={() => (window.location.href = "#contact")}
           >
             <span className="">Contact Me</span>
@@ -29,7 +32,7 @@ const Hero = () => {
               <path d="M19 4c1.08 0 2.027 .57 2.555 1.427l-9.555 6.37l-9.555 -6.37a2.999 2.999 0 0 1 2.354 -1.42l.201 -.007h14z" />
             </svg>
           </button>
-          <button className="flex shrink-0 items-center gap-x-3 rounded-lg border-2 border-blax-950 px-6 py-3 font-medium">
+          <button className="cta--resume flex shrink-0 items-center gap-x-3 rounded-lg border-2 border-blax-950 px-6 py-3 font-medium hover:bg-blax-950 hover:text-blax-200 active:scale-95">
             <span className="">
               <span className="hidden md:inline">Download</span> Resume
             </span>

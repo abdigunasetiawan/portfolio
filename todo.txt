@@ -9,7 +9,7 @@
 ✅ : 02-04-2025 | 17.50 tambah dark mode
 ✅ : 02-04-2025 | 23.46 tambahkan favicon
 ✅ : 05-04-2025 | 11.47 perbaiki animasi smooth scroll pada mobile
-perbaiki cta
+✅ : 05-04-2025 | 12.32 perbaiki cta
 perbaiki lebar container
 tambahkan locomotive scroll
 tambahkan design gradient modern

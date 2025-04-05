@@ -14,6 +14,27 @@ html[data-smooth-scroll="true"] {
   scroll-behavior: smooth;
 }
 
+section#hero .cta--resume {
+  transition:
+    background-color 300ms,
+    transform 100ms,
+    color 300ms;
+}
+
+section#hero .cta--resume:hover {
+  transition:
+    background-color 300ms,
+    transform 100ms,
+    color 300ms;
+}
+
+section#hero .cta--resume:active {
+  transition:
+    background-color 300ms,
+    transform 100ms,
+    color 300ms;
+}
+
 .container-center-padding {
   @apply container mx-auto px-4 md:px-8 lg:px-12 xl:px-16;
   /* @apply container mx-auto px-4 2xl:max-w-6xl; */
