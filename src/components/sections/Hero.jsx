@@ -2,7 +2,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="container-center-padding mt-16 flex items-center justify-center py-16 lg:gap-x-64"
+      className="container-center-padding mt-16 flex items-center justify-center py-16 md:gap-x-8 lg:gap-x-16 xl:gap-x-32"
     >
       <div className="">
         <h1 className="text-5xl font-extrabold md:text-6xl">

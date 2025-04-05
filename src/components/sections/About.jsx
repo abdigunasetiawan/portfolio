@@ -143,7 +143,7 @@ const About = () => {
       className="container-center-padding py-16"
     >
       <h2 className="text-center text-4xl font-extrabold">About Me</h2>
-      <div className="mt-8 flex flex-col items-center justify-center gap-y-4 md:flex-row lg:gap-x-64">
+      <div className="mt-8 flex flex-col items-center justify-center gap-y-4 md:flex-row md:gap-x-8 lg:gap-x-16 xl:gap-x-32">
         <div className="w-40 md:w-56 lg:w-72">
           <img
             className="h-full w-full"
