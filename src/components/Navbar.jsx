@@ -35,6 +35,9 @@ const Navbar = () => {
     setIsAnimatedLayerActive(false);
     navigationLinks.current.classList.add("close");
     navigationLinks.current.classList.remove("open");
+    setTimeout(() => {
+      document.documentElement.dataset.smoothScroll = "true";
+    }, 200);
   };
 
   // saat hamburger toggle diklik
@@ -45,9 +48,11 @@ const Navbar = () => {
       if (navigationLinks.current.classList.contains("open")) {
         navigationLinks.current.classList.add("close");
         navigationLinks.current.classList.remove("open");
+        document.documentElement.dataset.smoothScroll = "true";
       } else {
         navigationLinks.current.classList.remove("close");
         navigationLinks.current.classList.add("open");
+        document.documentElement.dataset.smoothScroll = "false";
       }
     }, 200);
     setIsAnimatedLayerActive(!isAnimatedLayerActive);
