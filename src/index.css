@@ -35,6 +35,63 @@ section#hero .cta--resume:active {
     color 300ms;
 }
 
+section#hero .blob-container {
+  animation: moveShape 12s infinite linear;
+}
+
+section#hero .blob-shape {
+  animation:
+    rotateShape 12s infinite linear,
+    changeShape 6s infinite linear;
+}
+
+@keyframes rotateShape {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes changeShape {
+  0%,
+  100% {
+    border-radius: 30% 70% 37% 63% / 18% 31% 69% 82%;
+  }
+
+  20% {
+    border-radius: 74% 26% 58% 42% / 44% 31% 69% 56%;
+  }
+  40% {
+    border-radius: 88% 12% 15% 85% / 44% 82% 18% 56%;
+  }
+
+  60% {
+    border-radius: 76% 24% 39% 61% / 18% 82% 18% 82%;
+  }
+
+  80% {
+    border-radius: 71% 29% 62% 38% / 52% 82% 18% 48%;
+  }
+}
+
+@keyframes moveShape {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  40% {
+    transform: translate(32px, 32px);
+  }
+
+  80% {
+    transform: translate(-32px, -32px);
+  }
+}
+
 .container-center-padding {
   @apply container mx-auto px-4 md:px-8 lg:px-12 xl:px-16;
   /* @apply container mx-auto px-4 2xl:max-w-6xl; */

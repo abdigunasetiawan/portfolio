@@ -1,9 +1,22 @@
 const Hero = () => {
+  <div class="relative h-full w-full bg-white"></div>;
   return (
     <section
       id="hero"
-      className="container-center-padding mt-16 flex items-center justify-center py-16 md:gap-x-8 lg:gap-x-16 xl:gap-x-32"
+      className="container-center-padding relative mt-16 flex items-center justify-center py-16 md:gap-x-8 lg:gap-x-16 xl:gap-x-32"
     >
+      {/* <div className="absolute left-1/2 top-1/2 -z-10 h-32 w-32 -translate-x-1/2 -translate-y-1/2">
+        <div className="animate-blob-scale blob1 absolute -left-[100px] h-32 w-32 rounded-full bg-[#F16767] blur-xl filter"></div>
+        <div className="animate-blob-scale blob2 absolute top-12 h-32 w-32 rounded-full bg-[#8F87F1] blur-xl filter"></div>
+        <div className="animate-blob-scale blob3 absolute -right-[100px] h-32 w-32 rounded-full bg-[#57B4BA] blur-xl filter"></div>
+      </div> */}
+
+      <div className="aspect-1/1 absolute left-1/2 top-1/2 -z-10 w-64 -translate-x-1/2 -translate-y-1/2">
+        <div className="blob-container">
+          <div className="blob-shape aspect-square w-64 rounded-[30%_70%_37%_63%/18%_31%_69%_82%] bg-red-500 bg-gradient-to-b from-violet-500 to-fuchsia-500 blur-2xl filter"></div>
+        </div>
+      </div>
+
       <div className="">
         <h1 className="text-5xl font-extrabold md:text-6xl">
           Hello 👋 <span className="block text-6xl md:text-7xl">I'm Abdi</span>

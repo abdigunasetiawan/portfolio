@@ -37,11 +37,11 @@ const Cursor = () => {
     <>
       <div
         ref={cursorCircle}
-        className="cursor-cirlce pointer-events-none fixed left-0 top-0 hidden h-12 w-12 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-blax-950 lg:block dark:border-blax-500"
+        className="cursor-cirlce pointer-events-none fixed left-0 top-0 z-[9999] hidden h-12 w-12 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-blax-950 lg:block dark:border-blax-500"
       ></div>
       <div
         ref={cursorDot}
-        className="cursor-dot pointer-events-none fixed left-0 top-0 hidden h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-blax-950 lg:block dark:bg-blax-400"
+        className="cursor-dot pointer-events-none fixed left-0 top-0 z-[9999] hidden h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-blax-950 lg:block dark:bg-blax-400"
       ></div>
     </>
   );

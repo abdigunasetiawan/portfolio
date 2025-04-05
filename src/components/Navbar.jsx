@@ -111,7 +111,7 @@ const Navbar = () => {
   // saat layar berubah
 
   return (
-    <header className="fixed left-0 top-0 w-full border-b bg-white/50 backdrop-blur-md dark:border-b-slate-100/10 dark:bg-[#0C0C0C]/50">
+    <header className="fixed left-0 top-0 z-[999] w-full border-b bg-white/50 backdrop-blur-md dark:border-b-slate-100/10 dark:bg-[#0C0C0C]/50">
       <div className="container-center-padding flex h-16 items-center justify-between">
         {/* 1 Child */}
         <a

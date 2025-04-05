@@ -38,6 +38,22 @@ export default {
           950: "#1b1c1e",
         },
       },
+      keyframes: {
+        scale: {
+          "0%": {
+            transform: "scale(1)",
+          },
+          "33%": {
+            transform: "scale(1.2 )",
+          },
+          "66%": {
+            transform: "scale(0.8)",
+          },
+          "100%": {
+            transform: "scale(1)",
+          },
+        },
+      },
     },
   },
   plugins: [],
