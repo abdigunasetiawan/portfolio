@@ -136,6 +136,9 @@ const Projects = () => {
           <div
             key={project.name}
             className="card flex flex-col overflow-hidden rounded-lg border dark:border-slate-100/10"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-once="true"
           >
             <a
               href={project.link.demo || "#"}

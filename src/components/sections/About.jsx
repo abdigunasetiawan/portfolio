@@ -1,6 +1,7 @@
 const About = () => {
   const socialLinks = [
     {
+      id: 1,
       label: "My Linkedin",
       icon: (
         <svg
@@ -30,6 +31,7 @@ const About = () => {
       href: "https://linkedin.com/in/abdigunasetiawan",
     },
     {
+      id: 2,
       label: "My Github",
       icon: (
         <svg
@@ -55,6 +57,7 @@ const About = () => {
       href: "https://github.com/abdigunasetiawan",
     },
     {
+      id: 3,
       label: "My Instagram",
       icon: (
         <svg
@@ -82,6 +85,7 @@ const About = () => {
       href: "https://www.instagram.com/abdigunasetiawan/",
     },
     {
+      id: 3,
       label: "My WhatsApp",
       icon: (
         <svg
@@ -108,6 +112,7 @@ const About = () => {
       href: "http://wa.me/6282163862223?text=Hello%20Abdi",
     },
     {
+      id: 4,
       label: "My Discord",
       icon: (
         <svg
@@ -144,7 +149,12 @@ const About = () => {
     >
       <h2 className="text-center text-4xl font-extrabold">About Me</h2>
       <div className="mt-8 flex flex-col items-center justify-center gap-y-4 md:flex-row md:gap-x-8 lg:gap-x-16 xl:gap-x-32">
-        <div className="w-40 md:w-56 lg:w-72">
+        <div
+          className="w-40 md:w-56 lg:w-72"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
           <img
             className="h-full w-full"
             src="images/hero.png"
@@ -152,7 +162,14 @@ const About = () => {
           />
         </div>
         <div className="">
-          <p className="max-w-xl text-balance text-center md:max-w-md md:text-left">Hi, I'm Abdi Guna Setiawan, a 20-year-old Information Systems student at STMIK Kaputama. As a passionate self-taught programmer, I have dedicated myself to continuous learning and improving my skills in web development. I specialize in front-end technologies, crafting user-friendly and interactive web applications. Currently based in Binjai, Indonesia, I am always eager to collaborate and build meaningful digital experiences</p>
+          <p
+            className="max-w-xl text-balance text-center md:max-w-md md:text-left"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-once="true"
+          >
+            Hi, I'm Abdi Guna Setiawan, a 20-year-old Information Systems student at STMIK Kaputama. As a passionate self-taught programmer, I have dedicated myself to continuous learning and improving my skills in web development. I specialize in front-end technologies, crafting user-friendly and interactive web applications. Currently based in Binjai, Indonesia, I am always eager to collaborate and build meaningful digital experiences
+          </p>
           <div className="mt-4">
             <h3 className="text-center text-lg font-bold md:text-left">My Social Links</h3>
             <div className="mt-1 flex justify-center gap-x-3 md:justify-start">
@@ -162,6 +179,10 @@ const About = () => {
                   href={link.href}
                   target="_blank"
                   label={link.label}
+                  data-aos="fade-up"
+                  data-aos-delay={50 * link.id}
+                  data-aos-duration={1000}
+                  data-aos-once="true"
                 >
                   {link.icon}
                 </a>

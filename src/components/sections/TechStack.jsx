@@ -1,6 +1,7 @@
 const TechStack = () => {
   const stacks = [
     {
+      id: 1,
       label: "Windows",
       svg: (
         <svg
@@ -26,6 +27,7 @@ const TechStack = () => {
       ),
     },
     {
+      id: 2,
       label: "VS Code",
       svg: (
         <svg
@@ -51,6 +53,7 @@ const TechStack = () => {
       ),
     },
     {
+      id: 3,
       label: "Figma",
       svg: (
         <svg
@@ -76,6 +79,7 @@ const TechStack = () => {
       ),
     },
     {
+      id: 4,
       label: "HTML",
       svg: (
         <svg
@@ -100,6 +104,7 @@ const TechStack = () => {
       ),
     },
     {
+      id: 5,
       label: "CSS",
       svg: (
         <svg
@@ -124,6 +129,7 @@ const TechStack = () => {
       ),
     },
     {
+      id: 6,
       label: "Javascript",
       svg: (
         <svg
@@ -149,6 +155,7 @@ const TechStack = () => {
       ),
     },
     {
+      id: 7,
       label: "Sass",
       svg: (
         <svg
@@ -173,6 +180,7 @@ const TechStack = () => {
       ),
     },
     {
+      id: 8,
       label: "Git",
       svg: (
         <svg
@@ -202,6 +210,7 @@ const TechStack = () => {
       ),
     },
     {
+      id: 9,
       label: "Github",
       svg: (
         <svg
@@ -225,6 +234,7 @@ const TechStack = () => {
       ),
     },
     {
+      id: 10,
       label: "NodeJS",
       svg: (
         <svg
@@ -249,6 +259,7 @@ const TechStack = () => {
       ),
     },
     {
+      id: 11,
       label: "Tailwind CSS",
       svg: (
         <svg
@@ -272,6 +283,7 @@ const TechStack = () => {
       ),
     },
     {
+      id: 12,
       label: "React",
       svg: (
         <svg
@@ -313,6 +325,10 @@ const TechStack = () => {
           <div
             key={stack.label}
             className="flex flex-col items-center justify-center gap-y-3 rounded-md border px-16 py-8 dark:border-slate-100/10"
+            data-aos="zoom-in-up"
+            data-aos-delay={100 * stack.id}
+            data-aos-duration={1000}
+            data-aos-once="true"
           >
             {stack.svg}
             <h4 className="text-nowrap text-lg font-bold text-blax-800 dark:text-blax-200">{stack.label}</h4>
