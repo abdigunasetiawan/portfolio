@@ -7,6 +7,7 @@ import Contact from "./components/sections/Contact";
 import Footer from "./components/Footer";
 import Cursor from "./components/Cursor";
 import { useEffect } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 // Library
 import { ReactLenis, useLenis } from "lenis/react";
@@ -30,6 +31,7 @@ const App = () => {
       <Contact></Contact>
       <Footer></Footer>
       <Cursor></Cursor>
+      <Analytics></Analytics>
     </ReactLenis>
   );
 };
