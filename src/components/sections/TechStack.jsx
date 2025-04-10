@@ -320,7 +320,15 @@ const TechStack = () => {
       className="container-center-padding py-16"
     >
       <h2 className="text-center text-4xl font-extrabold">Tech Stack</h2>
-      <div className="mt-8 grid grid-cols-2 gap-2 md:grid-cols-3 lg:gap-4">
+      <div className="relative mt-8 grid grid-cols-2 gap-2 md:grid-cols-3 lg:gap-4">
+        {/* Blob Decoration */}
+        {/* <div className="blob-3 aspect-1/1 absolute -bottom-32 -left-0 -z-10 w-56">
+          <div className="blob-container">
+            <div className="blob-shape aspect-square w-56 rounded-[30%_70%_37%_63%/18%_31%_69%_82%] bg-gradient-to-r from-[#2b5876] to-[#4e4376] blur-2xl filter"></div>
+          </div>
+        </div> */}
+        {/* _Blob Decoration */}
+
         {stacks.map((stack) => (
           <div
             key={stack.label}

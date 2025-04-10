@@ -138,7 +138,7 @@ const About = () => {
           <path d="M7 16.5c3.5 1 6.5 1 10 0" />
         </svg>
       ),
-      href: "https:abdi-dev.vercel.app",
+      href: "https://discordapp.com/users/USERID/1171088544102617140",
     },
   ];
 
@@ -161,7 +161,15 @@ const About = () => {
             alt=""
           />
         </div>
-        <div className="">
+        <div className="relative">
+          {/* Blob Decoration */}
+          {/* <div className="blob-2 aspect-1/1 absolute -bottom-32 -right-64 -z-10 w-56">
+            <div className="blob-container">
+              <div className="blob-shape aspect-square w-56 rounded-[30%_70%_37%_63%/18%_31%_69%_82%] bg-gradient-to-r from-[#000428] to-[#004e92] blur-2xl filter"></div>
+            </div>
+          </div> */}
+          {/* _Blob Decoration */}
+
           <p
             className="max-w-xl text-balance text-center md:max-w-md md:text-left"
             data-aos="fade-left"

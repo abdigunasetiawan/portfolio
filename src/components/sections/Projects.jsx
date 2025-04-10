@@ -56,7 +56,7 @@ const Projects = () => {
     {
       name: "Design Agency",
       description: "Design Agency is a practice project focused on converting a design into a sleek and professional landing page using pure CSS. This project enhances skills in UI structuring, layout techniques, and responsive design, ensuring a smooth and visually appealing user experience.",
-      stacks: ["HTML", "CSS", "Javascript", "Tailwind CSS"],
+      stacks: ["HTML", "CSS", "Javascript"],
       image: "../images/projects/design-agency.png",
       link: {
         github: "https://github.com/abdigunasetiawan/design-agency-landing-page",
@@ -66,7 +66,7 @@ const Projects = () => {
     {
       name: "Jadoo",
       description: "Jadoo is a practice project focused on transforming a design into a fully responsive landing page using pure CSS. This project improves skills in layout structuring, typography, and responsive design, ensuring a seamless and visually engaging user experience.",
-      stacks: ["HTML", "CSS", "Javascript", "Tailwind CSS"],
+      stacks: ["HTML", "CSS", "Javascript"],
       image: "../images/projects/jadoo.png",
       link: {
         github: "https://github.com/abdigunasetiawan/jadoo-travel-agency",

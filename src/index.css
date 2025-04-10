@@ -35,14 +35,24 @@ section#hero .cta--resume:active {
     color 300ms;
 }
 
-section#hero .blob-container {
-  animation: moveShape 12s infinite linear;
+.blob-1 .blob-container {
+  animation: moveShapeBlob1 12s infinite linear;
 }
 
-section#hero .blob-shape {
+.blob-1 .blob-shape {
   animation:
     rotateShape 12s infinite linear,
-    changeShape 6s infinite linear;
+    changeShapeBlob1 6s infinite linear;
+}
+
+.blob-2 .blob-container {
+  animation: moveShapeBlob2 12s infinite linear;
+}
+
+.blob-2 .blob-shape {
+  animation:
+    rotateShape 12s infinite linear,
+    changeShapeBlob2 6s infinite linear;
 }
 
 @keyframes rotateShape {
@@ -55,7 +65,7 @@ section#hero .blob-shape {
   }
 }
 
-@keyframes changeShape {
+@keyframes changeShapeBlob1 {
   0%,
   100% {
     border-radius: 30% 70% 37% 63% / 18% 31% 69% 82%;
@@ -77,7 +87,44 @@ section#hero .blob-shape {
   }
 }
 
-@keyframes moveShape {
+@keyframes moveShapeBlob1 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  40% {
+    transform: translate(32px, 32px);
+  }
+
+  80% {
+    transform: translate(-32px, -32px);
+  }
+}
+
+@keyframes changeShapeBlob2 {
+  0%,
+  100% {
+    border-radius: 30% 70% 37% 63% / 18% 31% 69% 82%;
+  }
+
+  20% {
+    border-radius: 27% 73% 62% 38% / 52% 82% 18% 48%;
+  }
+  40% {
+    border-radius: 32% 68% 52% 48% / 73% 39% 61% 27%;
+  }
+
+  60% {
+    border-radius: 63% 37% 82% 18% / 56% 34% 66% 44%;
+  }
+
+  80% {
+    border-radius: 76% 24% 71% 29% / 21% 80% 20% 79%;
+  }
+}
+
+@keyframes moveShapeBlob2 {
   0%,
   100% {
     transform: translate(0, 0);
@@ -165,22 +212,22 @@ section#contact .form-input:user-invalid {
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translate3d(0, 50px, 0);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
 @keyframes fadeOutDown {
   from {
     opacity: 1;
-    transform: translateY(0);
+    transform: translate3d(0, 0, 0);
   }
   to {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translate3d(0, 50px, 0);
   }
 }
 
