@@ -5,7 +5,7 @@ const Hero = () => {
       id="hero"
       className="container-center-padding relative mt-16 flex items-center justify-center py-16 md:gap-x-8 lg:gap-x-16 xl:gap-x-32"
     >
-      {/* <div className="blob-1 aspect-1/1 absolute left-1/2 top-1/2 -z-10 w-64 -translate-x-1/2 -translate-y-1/2">
+      {/* <div className="blob-1 aspect-1/1 absolute right-64 top-1/2 -z-10 w-64 -translate-y-1/2">
         <div className="blob-container">
           <div className="blob-shape aspect-square w-64 rounded-[30%_70%_37%_63%/18%_31%_69%_82%] bg-red-500 bg-gradient-to-b from-violet-500 to-fuchsia-500 blur-2xl filter"></div>
         </div>
@@ -61,13 +61,14 @@ const Hero = () => {
           </button>
         </div>
       </div>
-      <div className="hidden w-56 md:block lg:w-80">
-        <img
-          className="h-full w-full"
-          src="images/hero.png"
-          alt=""
-        />
-      </div>
+      {/* <div className="hidden w-56 md:block lg:w-[420px]"> */}
+      <img
+        className="hero-image hidden w-56 md:block lg:w-52 2xl:w-64"
+        src="images/abdi/hero.png"
+        // src="images/hero.png"
+        alt=""
+      />
+      {/* </div> */}
     </section>
   );
 };

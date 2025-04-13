@@ -14,6 +14,11 @@ html[data-smooth-scroll="true"] {
   scroll-behavior: smooth;
 }
 
+/* section#hero .hero-image {
+  -webkit-mask-image: radial-gradient(circle, black 100%, transparent 40%);
+  mask-image: radial-gradient(circle, black 100%, transparent 40%); 
+}
+*/
 section#hero .cta--resume {
   transition:
     background-color 300ms,
