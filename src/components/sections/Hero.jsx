@@ -63,7 +63,7 @@ const Hero = () => {
       </div>
       {/* <div className="hidden w-56 md:block lg:w-[420px]"> */}
       <img
-        className="hero-image hidden w-56 md:block lg:w-52 2xl:w-64"
+        className="hero-image pointer-events-none hidden w-56 select-none md:block lg:w-52 2xl:w-64"
         src="images/abdi/hero.png"
         // src="images/hero.png"
         alt=""

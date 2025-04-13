@@ -150,80 +150,16 @@ const About = () => {
       <h2 className="text-center text-4xl font-extrabold">About Me</h2>
       <div className="mt-8 flex flex-col items-center justify-center gap-y-4 md:flex-row md:gap-x-8 lg:gap-x-16 xl:gap-x-32">
         <div
-          className="relative w-40 md:w-56 lg:w-72"
+          className="w-40 md:w-56 lg:w-72"
           data-aos="fade-right"
           data-aos-duration="1000"
           data-aos-once="true"
         >
           <img
-            className="h-full w-full"
+            className="pointer-events-none h-full w-full select-none"
             src="images/abdi/about.png"
             alt=""
           />
-          {/* <div className="absolute left-0 top-0 flex h-full w-full">
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-            <div className="h-full w-full bg-gradient-to-r from-[#ffffff] from-0% via-[#000000] via-[28%] to-[#ffffff] to-100% opacity-30 mix-blend-overlay backdrop-blur-[180px]"></div>
-          </div> */}
         </div>
         <div className="relative">
           {/* Blob Decoration */}
