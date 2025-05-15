@@ -40,7 +40,7 @@ const Projects = () => {
       image: "../images/projects/storx-react.png",
       link: {
         github: "https://github.com/abdigunasetiawan/storx-react",
-        // demo: "https://dressly.vercel.app/",
+        demo: "https://storx-react.vercel.app/",
       },
     },
     {
