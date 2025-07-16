@@ -1,16 +1,1 @@
-✅ : 26-03-2025 | 23-28 : tambahkan fitur navigasi link navbar 
-✅ : 26-03-2025 | 23-45 : perbaiki social media link
-✅ : 27-03-2025 | 15.30 perbaiki card project
-✅ : 28-03-2025 | 00.25 perbaiki ikon toggle navbar
-✅ : 28-03-2025 | 00.25 tambahkan fungsi untuk menutup drawer navbar ketika link navbar diklik (mobile)
-✅ : 29-03-2025 | 16.36  tambahkan fitur contact me
-✅ : 30-03-2025 | 11.23 perbaiki card project
-✅ : 30-03-2025 | 13.15 perbaiki card project pada mobile
-✅ : 02-04-2025 | 17.50 tambah dark mode
-✅ : 02-04-2025 | 23.46 tambahkan favicon
-✅ : 05-04-2025 | 11.47 perbaiki animasi smooth scroll pada mobile
-✅ : 05-04-2025 | 12.32 perbaiki cta
-✅ : 05-04-2025 | 13.10 perbaiki lebar container
-✅ : 05-04-2025 | 13.22 tambahkan lenis scroll
-✅ : 09-04-2025 | 22.58 perbaiki stack project
-tambahkan loading layer
+
